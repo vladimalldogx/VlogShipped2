@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uc.vlogshippedclient">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".SponsorActivity"
+        android:allowBackup="true"
+        android:icon="@drawable/locker"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/locker"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.ChatHistoryActivity"></activity>
+        <activity android:name=".activities.ChatActivity" />
+        <activity android:name=".activities.NotificationInviteActivity" />
+        <activity android:name=".activities.NotificationActivity" />
+
+        <service
+            android:name=".service.VlogshippedNotification"
+            android:exported="false" />
+
+        <activity android:name=".activities.SubscriptionHistoryActivity" />
+        <activity android:name=".activities.ViewSubscriptionActivity" />
+        <activity android:name=".activities.SubscriptionActivity" />
+        <activity android:name=".activities.ViewContentActivity" />
+        <activity android:name=".activities.EditCampaignActivity" />
+        <activity android:name=".activities.ViewCampaignActivity" />
+        <activity android:name=".activities.CampaignActivity" />
+        <activity android:name=".activities.SelectionActivity" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.AddSamplingActivity" />
+        <activity android:name=".activities.AddCampaignActivity" />
+        <activity android:name=".activities.ProfileDetailActivity" />
+        <activity android:name=".activities.InfluencerListActivity" />
+        <activity android:name=".activities.ProfileActivity" />
+        <activity android:name=".activities.RegisterActivity" />
+        <activity android:name=".activities.MainActivity" />
+    </application>
+
+</manifest>

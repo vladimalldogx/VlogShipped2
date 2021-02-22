@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VlogShipped</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+    <string name="noti_id" translatable="false">Vlogshipped</string>
+</resources>

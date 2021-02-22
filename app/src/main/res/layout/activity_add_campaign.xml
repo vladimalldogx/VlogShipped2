@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddCampaignActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:onClick="btnBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back_button_black"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create New Campaign"
+            android:textSize="20sp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Campaign Title"
+                android:paddingStart="10dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:popupBackground="@android:drawable/dialog_holo_light_frame"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_spinner_background"
+                android:spinnerMode="dropdown"
+                android:layout_marginTop="20dp"
+                android:elevation="1dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/edit_startdate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:focusable="false"
+                android:hint="Campaign Start Date"
+                android:paddingStart="10dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_starttime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:popupBackground="@android:drawable/dialog_holo_light_frame"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_spinner_background"
+                android:spinnerMode="dropdown"
+                android:layout_marginTop="20dp"
+                android:elevation="1dp"
+                android:visibility="visible"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/edit_enddate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:focusable="false"
+                android:layout_marginEnd="20dp"
+                android:hint="Campaign End Date"
+                android:paddingStart="10dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_endtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:popupBackground="@android:drawable/dialog_holo_light_frame"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_spinner_background"
+                android:spinnerMode="dropdown"
+                android:layout_marginTop="20dp"
+                android:elevation="1dp"
+                android:visibility="visible"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/edit_producturl"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Product/Website URL"
+                android:paddingStart="10dp"
+                android:layout_marginTop="20dp"
+                />
+
+
+            <EditText
+                android:id="@+id/edit_price_range"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Price Range P 10,000 - P15,000"
+                android:paddingStart="10dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Browse"
+                android:onClick="btnBrowse"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="About your Prodcut/Service"
+                android:paddingStart="10dp"
+                android:layout_marginTop="20dp"
+                />
+
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signin_button"
+                android:layout_marginStart="20dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Submit"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

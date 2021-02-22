@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_vm"
+            android:icon="@drawable/homepage"
+            android:title="HOMEPAGE" />
+        <item
+            android:id="@+id/nav_p"
+            android:icon="@drawable/profile"
+            android:title="PROFILE" />
+        <item
+            android:id="@+id/nav_campaign"
+            android:icon="@drawable/content"
+            android:title="CAMPAIGN" />
+        <item
+            android:id="@+id/nav_s"
+            android:icon="@drawable/subscription"
+            android:title="SUBSCRIPTION" />
+        <item
+            android:id="@+id/nav_c"
+            android:icon="@drawable/star2"
+            android:title="PAID INFLUENCER" />
+        <item
+            android:id="@+id/nav_set"
+            android:icon="@drawable/settings"
+            android:title="SETTINGS" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about"
+            android:title="ABOUT" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/about"
+            android:title="LOGOUT" />
+    </group>
+
+</menu>
